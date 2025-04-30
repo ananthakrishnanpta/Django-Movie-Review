@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <ul>
+    {% for movie in movies %}
+    <li>
+        {{movie.title}}
+        <ul>
+            {% for actor in movie.cast.all %}
+            <li>
+                
+                {{actor.name}}
+                
+            </li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+    </ul>
+    
+{% endblock %}

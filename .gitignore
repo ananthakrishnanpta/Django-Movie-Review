@@ -1,0 +1,18 @@
+# Skipping the virtual environment
+
+virt/
+
+# media folders
+media/
+
+# DB
+db.sqlite3
+
+# python generated files
+__pycache__/
+
+# migrations
+migrations/
+
+# environment files
+.env
